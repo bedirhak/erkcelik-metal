@@ -1,0 +1,652 @@
+/* Hizmet Sayfaları Genel Stilleri */
+
+.page-hero {
+    background: linear-gradient(135deg, rgba(23, 31, 58, 0.95) 0%, rgba(15, 20, 40, 0.95) 100%),
+        url('../assets/images/ev-temizlik-bg.jpg') center/cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Ev Temizliği Sayfası */
+.ev-temizligi .page-hero {
+    background: linear-gradient(135deg, rgba(23, 31, 58, 0.95) 0%, rgba(15, 20, 40, 0.95) 100%),
+        url('../assets/images/ev-temizlik-bg.jpg') center/cover;
+}
+
+/* Ofis Temizliği Sayfası */
+.ofis-temizligi .page-hero {
+    background: linear-gradient(135deg, rgba(23, 31, 58, 0.95) 0%, rgba(15, 20, 40, 0.95) 100%),
+        url('../assets/images/ofis-temizlik-bg.jpg') center/cover;
+}
+
+/* Halı Yıkama Sayfası */
+.hali-yikama .page-hero {
+    background: linear-gradient(135deg, rgba(23, 31, 58, 0.95) 0%, rgba(15, 20, 40, 0.95) 100%),
+        url('../assets/images/hali-yikama-bg.jpg') center/cover;
+}
+
+.page-content {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.main-content h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.main-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.services-list h3 {
+    color: #171F3A;
+    margin-bottom: 20px;
+}
+
+.services-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+.services-list li i {
+    color: #171F3A;
+}
+
+.sidebar {
+    position: sticky;
+    top: 150px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.contact-box {
+    background: linear-gradient(135deg, #171F3A 0%, #0f1428 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-box h3 {
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-btn {
+    background: white;
+    color: #171F3A;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn.emergency {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    animation: pulse 2s infinite;
+}
+
+.contact-btn.emergency:hover {
+    background: linear-gradient(135deg, #c82333, #a71e2a);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 5px 25px rgba(220, 53, 69, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+    }
+}
+
+.price-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #171F3A;
+}
+
+.price-info h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price-info p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .page-hero {
+        height: 50vh;
+    }
+}
+
+/* Halı Yıkama Sayfası - Process Steps */
+.process-steps {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.process-steps h3 {
+    color: #171F3A;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.step-item {
+    text-align: center;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #171F3A 0%, #0f1428 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+
+.step-item h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.step-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   HAKKIMIZDA SAYFASI STİLLERİ
+   ======================================== */
+
+/* Page Hero - Hakkımızda */
+.page-hero {
+    background: linear-gradient(135deg, rgba(23, 31, 58, 0.95) 0%, rgba(15, 20, 40, 0.95) 100%);
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.page-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.8;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #171F3A;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #171F3A, #0f1428);
+    border-radius: 2px;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(23, 31, 58, 0.2);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #171F3A;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* Values Section */
+.values-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(23, 31, 58, 0.15);
+    border-color: #171F3A;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #171F3A 0%, #0f1428 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.4s ease;
+}
+
+.value-card:hover .value-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.value-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #171F3A 0%, #0f1428 100%);
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+/* Services Overview */
+.services-overview {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.services-overview .services-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.services-overview .service-item {
+    background: #f8f9fa;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.services-overview .service-item:hover {
+    background: white;
+    border-color: #171F3A;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(23, 31, 58, 0.15);
+}
+
+.services-overview .service-item i {
+    font-size: 2.5rem;
+    color: #171F3A;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.services-overview .service-item span {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* CTA Section - About Page */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #171F3A 0%, #0f1428 100%);
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn.white {
+    background: white;
+    color: #171F3A;
+}
+
+.cta-btn.white:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn.outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-btn.outline:hover {
+    background: white;
+    color: #171F3A;
+    transform: translateY(-3px);
+}
+
+/* Responsive - Hakkımızda */
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .services-overview .services-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-image::before {
+        display: none;
+    }
+    
+    .about-text h2 {
+        font-size: 2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .services-overview .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-overview .services-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}

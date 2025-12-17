@@ -1,0 +1,26 @@
+/* Angel Temizlik - Ana CSS Dosyası */
+/* Tüm stiller bu dosyadan import edilir */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset ve Normalization */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Component Stilleri (Header/Footer) */
+@import 'components.css';
+
+/* Sayfa Özel Stilleri */
+@import 'home.css';
+@import 'service-pages.css';
+@import 'contact.css';
