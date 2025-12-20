@@ -1087,6 +1087,20 @@ body {
         gap: 15px;
         text-align: center;
     }
+
+    /* Mobile Footer Contact Updates */
+    .footer-contact-item .contact-icon {
+        display: none;
+    }
+
+    .footer-contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-text {
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,92 @@
+
+/* Service Areas Section */
+.service-areas-wrapper {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-areas-content .area-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(56, 178, 178, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 25px;
+}
+
+.service-areas-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.service-areas-content p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.districts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.district-item {
+    background: var(--bg-light);
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.district-item:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.district-item i {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+.district-item:hover i {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .service-areas-wrapper {
+        padding: 30px 20px;
+    }
+
+    .service-areas-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .districts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .districts-grid {
+        grid-template-columns: 1fr;
+    }
+}
