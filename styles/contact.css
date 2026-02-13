@@ -253,6 +253,25 @@
     color: var(--white);
 }
 
+.province-header {
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    margin-top: 15px;
+    grid-column: 1 / -1;
+}
+
+.province-header:first-child {
+    margin-top: 0;
+}
+
+.province-header i {
+    color: var(--white);
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
     .service-areas-wrapper {
         padding: 30px 20px;

@@ -468,10 +468,6 @@ body {
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-    color: #171F3A;
-}
-
 /* Footer Navigation List */
 .footer-nav-list {
     list-style: none;
@@ -716,10 +712,6 @@ body {
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.3s ease;
-}
-
-.contact-text a:hover {
-    color: #171F3A;
 }
 
 /* Footer CTA Butonu */
